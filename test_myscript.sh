@@ -11,7 +11,7 @@ else
 fi
 
 # Test for the welcome message
-if /bin/myscript.sh | grep -q "Hello, my name is Jarrett"; then
+if /bin/myscript.sh | grep -q "Hello my name is Jarrett, and this is my script."; then
     echo "Test Passed: Welcome message is correct."
 else
     echo "Test Failed: Welcome message is incorrect."

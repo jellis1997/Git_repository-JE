@@ -1,0 +1,12 @@
+# Uses Ubuntu as the base image
+FROM ubuntu
+
+# Sets the working directory within the container
+WORKDIR /my_solution
+
+# Copy's the solution shell script and configuration file to the image
+COPY myscript.sh /bin
+COPY myconfig.conf .
+
+# Makes the script executable
+RUN chmod +x /bin/myscript.sh

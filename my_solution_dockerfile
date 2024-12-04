@@ -4,9 +4,14 @@ FROM ubuntu
 # Sets the working directory within the container
 WORKDIR /my_solution
 
-# Copy's the solution shell script and configuration file to the image
+# Copies the solution shell script and configuration file to the image
 COPY myscript.sh /bin
 COPY myconfig.conf .
 
 # Makes the script executable
 RUN chmod +x /bin/myscript.sh
+
+# Adds a test script/command
+COPY test_myscript.sh /bin
+RUN chmod +x /bin/test_myscript.sh
+CMD ["/bin/test_myscript.sh"]

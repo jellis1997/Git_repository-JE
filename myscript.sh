@@ -1,5 +1,4 @@
-bash
-#!/bin/bash
+
 
 # A simple script that reads a configuration file and prints a message
 CONFIG_FILE="/my_solution/myconfig.conf"
